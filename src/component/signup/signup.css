@@ -1,0 +1,93 @@
+.signup{
+    width: 100%;
+    height: 93vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signupContainer{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: flex-end;
+    height: 70vh;
+    background-image: url('https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    
+
+}
+
+.signupItem{
+    background-color: rgb(241, 240, 240);
+    width: 50%;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.signupTitle{
+    margin-right: 20px ;
+    font-size:1.6em ;
+    padding:10px 0;
+    background-color: rgb(241, 240, 240);
+    color: #555;
+    width: 100%;
+    text-align: center;
+}
+.icon{
+    background-color: rgb(241, 240, 240);
+}
+.iconStyle{
+    background-color: rgb(241, 240, 240);
+}
+
+.form{
+    background-color: rgb(241, 240, 240);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px;
+}
+input.input[type=text]{
+    /* font-size: large; */
+    width: 74%;
+    margin: 20px;
+}
+ input[type=text], input[type=email], input[type=password]{
+    margin: 20px;
+    background-color: rgb(241, 240, 240);
+    border-bottom: 2px solid #555;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    width: 70%;
+}   
+input[type=text]:focus{
+    border-bottom: 2px solid #555;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+input:focus{
+    background-color: rgb(241, 240, 240);
+    border-bottom: 2px solid #555;
+    outline: none;
+}
+
+.signupBtn{
+    margin-top: 40px;
+    width: 77%;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color:#555;
+    color:#ccc; 
+    padding: 10px; 
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}  

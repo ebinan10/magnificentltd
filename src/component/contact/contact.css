@@ -1,0 +1,64 @@
+.contact{
+    background-color: #ccc;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactContainer{
+    width: 100%;
+    background-color: #555;
+    color: #ccc;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactItem{
+    margin: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contat{
+    padding: 0 40px 0 40px;
+    width: 70%;
+}
+.contat input.input{
+    width: 60%;
+    height: 50px;
+    
+}
+.contat .form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #555;
+}
+textarea{
+    margin-bottom: 20px;
+    height: 10vh;
+    width: 100%;
+    font-size: 1.3em;
+    padding: 15px;
+    border: none;
+    background-color: white;
+}
+textarea.textarea:active, textarea.textarea:focus{
+    border: none;
+    outline: none;
+    padding: 15px;
+    color: #555;
+}
+.textarea[type=text]:focus{
+    border: none;
+    outline: none;
+}
+.btn{
+    width: 30%;
+    background-color: #ccc;
+}
+.contat .btn:hover{
+    color: black;
+}

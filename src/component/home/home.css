@@ -1,0 +1,16 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(12, 48, 80);
+}
+.homeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

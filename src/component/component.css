@@ -1,0 +1,17 @@
+.component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.componentContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1024px;
+    align-items: center;
+}
+.componentItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

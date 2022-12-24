@@ -1,11 +1,11 @@
 import './App.css';
+import Nav from './component/nav/Nav';
+import Route from './Route';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       
-      </header>
+      <Route/>
     </div>
   );
 }

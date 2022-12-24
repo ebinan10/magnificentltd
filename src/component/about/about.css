@@ -1,0 +1,23 @@
+.about{
+    background-color: #ccc;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutContainer{
+    width: 100%;
+    background-color: #555;
+    color: #ccc;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutItem{
+    margin: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
