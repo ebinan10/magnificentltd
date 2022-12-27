@@ -52,6 +52,6 @@ p{
     cursor: pointer;
 }
 
-button:hover{
-    color: rgb(199, 199, 199);
+.mailerItem button:hover{
+    color: rgb(3, 2, 2);
 }

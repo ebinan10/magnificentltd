@@ -29,17 +29,7 @@ const Nav = () => {
               <Link to="/component2">Component2</Link>
               </li>      
             </ul>
-             <ul className="navItemLi">
-              <li className="lilink">
-              <Link to="/signup">Sign up</Link>
-              <FontAwesomeIcon icon={faUserPlus} className='iconNav'/>
-             </li>
-              <li className="lilink">
-              <Link to="/login">Sign in</Link>
-              <FontAwesomeIcon icon={faUser} className='iconNav'/>
              
-              </li>
-             </ul>
 
             
         </div>

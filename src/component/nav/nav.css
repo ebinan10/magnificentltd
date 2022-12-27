@@ -4,21 +4,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #555;
+    /* background-color: #ccc; */
     height: 80px;
-    color: rgb(224, 224, 224);
+    color: #555;
     font-size: larger;
 }
 .navContainer{
-    width: 80%;
+    width: 70%;
     /* max-width: 1024px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.title{
-    background-color:#555;
-    color: rgb(224, 224, 224);
+.navContainer .title{
+    /* background-color:#ccc; */
+    color: #555;
     width:100%;
 }
 li{
@@ -32,18 +32,18 @@ li{
     justify-content: space-between;
     align-items: center;
 }
-a{
+ a{
     text-decoration: none;
     gap:30px;
-    color:rgb(224, 224, 224);
-    background-color: #555;
+    color:#555;
+    background-color: white;
     width: 100%;
 }
 a:hover{
     color: rgb(187, 229, 248);
 }
 ul{
-    background-color: #555;
+    background-color: white;
     width: 100%;
 }
 li{
@@ -56,17 +56,4 @@ li{
     justify-content: space-evenly;
     gap: 10px;
 }
-.iconNav{
-    margin-top: 10px;
-    font-size: 20px;
-}
-.navItemLi{
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-}
-.lilink{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px; 
-}
+

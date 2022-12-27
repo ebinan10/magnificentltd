@@ -1,0 +1,84 @@
+.header{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555;
+    color: white;
+}
+.headerContainer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.HeaderItemLi{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    background-color: #555;
+    position:relative;
+}
+.lilink{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+}
+.iconNav{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.HeaderItemLi a{
+    background-color: #555;
+    color: white;
+    font-size: 30px;
+}
+select{
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+#language *{
+    padding: 15px;
+}
+.none{
+    display: none;
+}
+.block{
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    display: block;
+    background: #555;
+    z-index: 2;
+}
+.block1{
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    display: block;
+    background: #555;
+    z-index: 2;
+}
+.view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.headerItem li {
+    margin: 15px;
+}

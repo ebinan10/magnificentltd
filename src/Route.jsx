@@ -15,12 +15,14 @@ import Mailer from './component/mailer/Mailer';
 import Footer from './component/footer/Footer';
 import Contact from './component/contact/Contact';
 import About from './component/about/About';
+import Header from './component/header/Header';
 
 const Rout = () => {
   return (
     <div>
       
         <Router>
+          <Header/>
           <Nav/>
             <Routes>
               
