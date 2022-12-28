@@ -1,28 +1,30 @@
 import React from 'react'
 import './header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch,faUserPlus, faUser, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faSearch,faUserPlus, faUser, faCaretDown, faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 
 const Header = () => {
     const [classname, setClassname] = useState('none');
     const [lang, setLang] = useState('EN')
     const [block, setBlock] = useState('none')
     const [block1, setBlock1] = useState('none')
-    const changePaternSignin =(click)=>{
-        if(block==='none')
+    const [block2, setBlock2] = useState('none')
+    const changePaternSignin = (click) =>{
+        if(block2==='none')
         {
-            setBlock('block')
+            setBlock2('block1')
         }
         else{
-            setBlock('none')
+            setBlock2('none')
         }
     }
-    const changePaternSignup =(click)=>{
+    const changePaternSignup =()=>{
+        console.log('first') 
         if(block1==='none')
         {
-            setBlock1('block')
+            setBlock1('block1')
         }
         else{
             setBlock1('none')
@@ -37,6 +39,9 @@ const Header = () => {
         }
         
     }
+    const changePatern =()=>{
+     return  block1==='block2'?setBlock2('none'): setBlock2('block2');
+    }
     const Lang = (e, name) =>{
         switch(name){
             case 'english':setLang('EN')
@@ -46,14 +51,20 @@ const Header = () => {
             case 'italian':setLang('IT')
 
     }}
+    useEffect(() => {
+        setTimeout(() => {
+           setBlock1('none') 
+           setBlock2('none')
+        }, 2000);
+       
+    }, )
+    
   return (
     <div className='header'>
         <div className="headerContainer">
             <h2 className="headerName">Brand Name</h2>
             <div className="headerItem">
-                    <ul className="language">
-                        <li className='lang'></li>
-                    </ul>
+                    
                     {lang}<FontAwesomeIcon icon={faCaretDown} onClick={changeStyle}/>
                     <ul className={classname}> 
                         
@@ -73,13 +84,21 @@ const Header = () => {
                     </ul>
             </div>
             <ul className="HeaderItemLi">
-              <li className="lilink">
-              <Link to="/signup" className={block}>Sign up</Link>
-              <FontAwesomeIcon icon={faUserPlus} className='iconNav' onClick={changePaternSignup}/>
+              <li className="lilink"><div className={block1}>Signup</div>
+              <Link to="/signup" className='headerLink'>
+                <FontAwesomeIcon icon={faUserPlus} className='iconNav'
+                 onMouseEnter={changePaternSignup} />
+              </Link>
              </li>
               <li className="lilink">
-              <Link to="/login" className={block1}>Sign in</Link>
-              <FontAwesomeIcon icon={faUser} className='iconNav' onClick={changePaternSignin}/>
+              <Link to="/login" className='headerLink'>
+                <div className={block2}>Signin</div>
+              <FontAwesomeIcon icon={faRightToBracket} className='iconNav'
+              onMouseEnter={changePatern} >
+              <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
+              </FontAwesomeIcon>
+              </Link>
+              
              
               </li>
              </ul>

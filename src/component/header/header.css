@@ -24,7 +24,7 @@
     width: 20%;
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 50px;
     background-color: #555;
     position:relative;
 }
@@ -34,8 +34,11 @@
     gap: 10px; 
 }
 .iconNav{
+    width: 50px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 30px;
+    position: relative;
+    align-items: center;
 }
 
 .HeaderItemLi a{
@@ -58,20 +61,48 @@ select{
     display: none;
 }
 .block{
+    width: 80%;
     position: absolute;
     top: 50px;
     left: 15px;
-    display: block;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #555;
     z-index: 2;
 }
 .block1{
+    width: 100px;
+    height: 50px;
     position: absolute;
-    top: 50px;
-    left: 15px;
-    display: block;
-    background: #555;
+    font-size: 25px;
+    top: 57px;
+    right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ccc;
+    color: #555;
     z-index: 2;
+    cursor: pointer;
+}
+.block2{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    font-size: 25px;
+    top: 57px;
+    right: -58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ccc;
+    color: #555;
+    z-index: 2;
+    cursor: pointer;
 }
 .view{
     display: flex;
@@ -81,4 +112,23 @@ select{
 }
 .headerItem li {
     margin: 15px;
+}
+.display1{
+    display: none;
+}
+ .display1:hover{
+    display: block;
+    position: absolute;
+    top:0;
+    right:0;
+}
+.headerLink{
+    position: relative;
+}
+ /* .lang{
+    width: 80px;
+} */
+.block li{
+    margin: 0;
+    width: 80px;
 }
