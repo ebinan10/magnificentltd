@@ -30,7 +30,7 @@ li{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
  a{
     text-decoration: none;
@@ -54,6 +54,11 @@ li{
 .navItem li{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     gap: 10px;
 }
 
+.li .iconNav{
+    align-items: center;
+    margin-bottom: 30px;
+}
