@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from '././component/home/Home';
 import Signup from '././component/signup/Signup';
 import Login from '././component/login/Login';
-import Component1 from './component/component1/Component1';
+import Service from './component/services/Service';
 import Component2 from './component/component2/Component2';
 import Component3 from './component/component3/Component3';
 import Component4 from './component/component4/Component4';
@@ -22,7 +22,7 @@ const Rout = () => {
     <div>
       
         <Router>
-          <Header/>
+          {/* <Header/> */}
           <Nav/>
             <Routes>
               
@@ -30,8 +30,7 @@ const Rout = () => {
                 <Route path='signup' element={<Signup/>}/>
                 <Route path='login' element={<Login/>}/>
                 <Route path='contact' element={<Contact/>}/>
-                
-                <Route path='component1' element={<Component1/>}/>
+                <Route path='service' element={<Service/>}/>
                 <Route path='component2' element={<Component2/>}/>
                 <Route path='component3' element={<Component3/>}/>
                 <Route path='about' element={<About/>}/>

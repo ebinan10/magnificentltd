@@ -1,30 +1,45 @@
 .nav{
     margin: 0;
     width: 100%;
+    background-color: rgb(221, 220, 220);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    /* background-color: #ccc; */
     height: 80px;
-    color: #555;
     font-size: larger;
+    position: fixed;
+    top: 0px;
+    z-index: 4;
 }
 .navContainer{
     width: 70%;
-    /* max-width: 1024px; */
+    max-width: 1024px;
+    /* background: #000; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .navContainer .title{
-    /* background-color:#ccc; */
-    color: #555;
+    color:#122506;
     width:100%;
 }
 li{
-    margin: 0;
+    margin: 10px;
     box-sizing: border-box;
+    font-size: xx-small;
 }
+.logo{
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+  }
+  .logo img{
+    height: 100%;
+    width: 100%;
+    
+    border-radius: 50%;
+  }
 .navItem{
     width: 100%;
     height: 100%;
@@ -35,15 +50,13 @@ li{
  a{
     text-decoration: none;
     gap:30px;
-    color:#555;
-    background-color: white;
+    color:#122506;
     width: 100%;
 }
 a:hover{
-    color: rgb(187, 229, 248);
+    color: white;
 }
 ul{
-    background-color: white;
     width: 100%;
 }
 li{
@@ -55,10 +68,180 @@ li{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 10px;
+    gap: 2px;
 }
 
 .li .iconNav{
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    color:#122506;
+    padding: 15px;
+}
+
+@media (max-width: 768px){
+    .navItem{
+        display: none
+    }
+
+};
+    
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+* {
+  font-family: "Raleway";
+  box-sizing: border-box;
+}
+
+#top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #00BAF0;
+  background: linear-gradient(to left, #f46b45, #eea849); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #FFF;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #0a0000;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 48rem) {
+  .menu-button-container {
+    display: flex;
+  }
+
+  .nav .title{
+    color: #426B29; 
+  }
+
+  .menu {
+    background: #eeecec;
+    position: absolute;
+    top: 30px;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu a{
+    display: flex;
+    align-items: center;
+  }
+  section{
+    width: 70%;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    /* border: 1px solid #333; */
+    height: 4.5em;
+    padding: 0.1em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    /* background-color: rgb(10, 5, 5); */
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+
+  .logo{
+    margin-right: 10px;
+    height: 50px;
+    width: 150px;
+  }
+  .logo img{
+    height: 100%;
+    width: 100%;
+  }
+  
 }

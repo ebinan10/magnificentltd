@@ -3,14 +3,14 @@
     display:flex;
     justify-content:center;
     align-items: center;
-    background-color: #555;
+    background-color: #426B29;
 }
 .mailerContainer{
     display: flex;
     justify-content: center;
     width: 100%;
     max-width: 1024px;
-    background-color: #555;
+    background-color: #426B29;
 }
 .mailerItem{
     margin-top: 50px;
@@ -19,39 +19,109 @@
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #555;
+    background-color: #426B29;
     height: 40vh;
 }
-.title{
+.newsletter{
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    margin: 4px;
     align-items: center;
     color: #ccc;
+    font-size: 22px;
 }
 
 p{
     align-items: center;
     color: #ccc;
-    font-size: 28px;
+    font-size: 22px;
 }
 .mailer .input[type=text]{
     width: 40%;
 }
 .input{
-    height: 45px;
-    font-size: 25px;
+    height: 32px;
+    font-size: 18px;
     padding-left: 10px;
-    color: #555;
+    color: #426B29;
 }
 .btn{
     margin-bottom: 40px;
-    width: 30%;
+    width: 25%;
     height: 45px;
-    font-size: 1.2em;
-    color: #555;
+    font-size: 18px;
+    color: #426B29;
     border: none;
     border-radius: 15px;
     cursor: pointer;
 }
 
 .mailerItem button:hover{
-    color: rgb(3, 2, 2);
+    color: silver;
 }
+
+
+
+@media (max-width:768px) {
+    mailer{
+        margin: 0;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        background-color: #426B29;
+    }
+    .mailerContainer{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #426B29;
+    }
+    .mailerItem{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #426B29;
+        height: 40vh;
+    }
+    .title{
+        align-items: center;
+        color: silver;
+    }
+    
+    p{
+        align-items: center;
+        color: silver;
+        font-size: 16px;
+    }
+    .mailer .input[type=text]{
+        width: 25%;
+    }
+    .input{
+        height: 35px;
+        font-size: 20px;
+        padding-left: 10px;
+        color: silver;
+    }
+    .btn{
+        margin-bottom: 40px;
+        width: 30%;
+        height: 35px;
+        font-size: 18px;
+        color: #426B29;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .mailerItem button:hover{
+        color: rgb(12, 59, 1);
+    }
+    .mailer .input[type=text]{
+        width: 75%;
+    }
+}
+

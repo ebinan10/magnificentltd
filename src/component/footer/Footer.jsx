@@ -43,11 +43,13 @@ const Footer = () => {
         </ul>
         </div>
         <div className="footerItem">
+          <div className="logoImg">
         <a href="www.twitter.com/ebinan10"><img src={Twitter} alt="" to></img></a>
         <a href="www.facebook.com/ebinan10"><img src={Facebook} alt="" ></img></a>
         <a href="www.youtube.com/ebinan10"><img src={Youtube} alt="" ></img></a>
         <a href="www.linkedin.com/ebinan10"><img src={Linkedin} alt=""></img></a>
-            <>&copy;2022 Component. All rights reserved.</>
+          </div>  
+          <div className='copy'><span className='copylogo'>&copy;2025 </span>  Component. All rights reserved.</div>
         </div>
         </div></div>
   )

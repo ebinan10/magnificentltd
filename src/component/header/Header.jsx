@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch,faUserPlus, faUser, faCaretDown, faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import { useState,useEffect } from 'react'
+// import {magnificentltd}  from './magnificentltd'
 
 const Header = () => {
     const [classname, setClassname] = useState('none');
@@ -62,7 +63,8 @@ const Header = () => {
   return (
     <div className='header'>
         <div className="headerContainer">
-            <h2 className="headerName">Brand Name</h2>
+            <h2 className="headerName"> </h2>
+            
             <div className="headerItem">
                     
                     {lang}<FontAwesomeIcon icon={faCaretDown} onClick={changeStyle}/>
