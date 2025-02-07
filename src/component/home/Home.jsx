@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.css'   
 import blueprint from './clipboard.png'
+import contractor from './safety (1).png'
 
 const Home = () => {
   return (
@@ -14,19 +15,16 @@ const Home = () => {
             <div className="homeContent">
                     <div className="homeContent2">
                       <div className="homecontentX ">
-                        <img src={blueprint} alt="" />
+                        <img className='homeImg' src={contractor}/>
                         <h4>
                           General Contracting
                         </h4>
                         <p className='font-[15px] '>
-                        As a general contractor, Forte Construction 
-                        Corp. oversees the day-to-day efforts of multiple
+                        As a general contractor, Magnificent Ltd. oversees the day-to-day efforts of multiple
                          construction sites, manages vendors and subcontractors,
                           and is the central point of communication for all of 
                           its projects. Forte specializes in performing large-scale 
-                          public construction contracts in NYC and Long Island. 
-                          Forte has considerable experience with the MTA, having
-                           upgraded over 40 stations for NYCT and LIRR.</p>
+                          public construction contracts in large scale across Nigeria and Africa. </p>
                       </div>
                       <div className="homecontentX homeA">
                       <img src='icons8-service.gif' alt="" />
@@ -34,7 +32,7 @@ const Home = () => {
                           Pre-Construction
                         </h4>
                         <p className='font-[15px] '>
-                        Forte Construction partners with clients 
+                        Magnificent Ltd partners with clients 
                         during pre-construction to ensure a smooth 
                         transition from acquisitions, leasing and planning
                          to the construction site. Forte’s discovery process 

@@ -4,7 +4,7 @@ import './nav.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faContactBook, faContactCard, faHome, faPhone, faQuestion, faRightToBracket, faServer, faUser, faUserPlus } from '@fortawesome/free-solid-svg-icons'
 import { faAssistiveListeningSystems } from '@fortawesome/free-solid-svg-icons/faAssistiveListeningSystems'
-import magnificent from './magnificentltd.jpeg'
+import magnificent from './IMG-20250202-WA0064-removebg-preview (1).png'
 
 const Nav = () => {
   return (
