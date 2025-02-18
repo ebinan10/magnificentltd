@@ -19,12 +19,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background: rgb(154, 189, 154, .3);
     background-image: url(../../../public/interiorsketch5.jpg);
+    /* opacity: .4; */
     height: 100vh;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+}
+.homeItem .text{
+    /* opacity:initial; */
+    color: rgba(5, 51, 5, 1)!important;
 }
 .homeContent{
     min-height: 130vh;
@@ -94,21 +99,29 @@
 }
 
 
-    .homecontentY p, .homecontentX p{
-        font-size: 13px;
-        line-height: 1.5rem;
-    }
+.homecontentY p, .homecontentX p{
+    font-size: 13px;
+line-height: 1.5rem;
+}
     .homecontentY p{
         color: #426B29;
     }
 
 .text{
     color: black;
-    /* opacity: .1; */
+    opacity: initial;
     /* background-color: white; */
     /* height: 100px; */
     /* align-items: center; */
     /* margin: auto; */
+}
+.homeItem .text{
+    /* width: 90%; */
+    opacity: 2;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 1.9em;
+    
 }
 
 .main{
@@ -126,10 +139,11 @@
 
 .main .text{
     width: 40%;
-    height: 40vh;
-    font-size: 17px;
+    height: min-content;
+    font-size:19px;
     line-height: 1.5em;;
     color: black;
+    text-align: justify;
 }
 
 
@@ -145,6 +159,11 @@
        background-image: url(../../../public/interiorsketch5.jpg);
     
     }
+
+    .homeItem .text{
+        font-size: medium;
+    }
+
     .main{
         background-size:auto;
         height: 75vh;

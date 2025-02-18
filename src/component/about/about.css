@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .aboutContainer{
     width: 100%;
@@ -13,13 +14,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: #ccc;
-    min-height: 145vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.aboutContent{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .aboutTitle{
+    margin-top: 70px;
     height: 100px;
     width: 80%;
     display: flex;
@@ -27,6 +37,7 @@
     align-items: center;
     color: white;
     font-size: 17px;
+    font-style: italic;
 }
 .aboutItem{
     margin-top: 40px;
@@ -69,6 +80,7 @@ ul.aboutUl{
         padding: 10px 30px;
         display: flex;
     justify-content: space-between;
+    gap: 25px;
     }
     h2.aboutH{
         width: 100%;
@@ -84,6 +96,12 @@ ul.aboutUl{
     justify-items: center;
     align-items: center;
 
+}
+.aboutImg{
+    padding: 20px;
+}
+h2.aboutTitle{
+    width: 80%;
 }
 p.aboutPar{
     line-height: 1.8em;
@@ -107,5 +125,19 @@ p.aboutPar{
 
     p.aboutPar{
         font-size: 17px;
+    }
+
+    .aboutContainer{
+        justify-content: center;
+    }
+    .aboutContent{
+        width: 60%;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        justify-items: start;
+    }
+    .aboutTitle{
+        width: 73%;
     }
 }

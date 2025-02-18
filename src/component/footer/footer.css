@@ -16,6 +16,7 @@
     color: #ccc;
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .footerItem{
@@ -58,11 +59,17 @@ img{
 .logoImg a img{
     margin: 20px;
 }
+.ul{
+    width: 150px;
+    box-sizing: border-box;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
 
 @media (max-width:768px) {
     .footerContent{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .footerItem{

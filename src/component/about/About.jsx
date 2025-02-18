@@ -10,9 +10,10 @@ const About = () => {
   return (
     <div className='about'>
         <div className="aboutContainer">
+          <div className="aboutContent">
             <h2 className='aboutTitle'>About</h2>
             <ul className='aboutUl'>
-              <h2 className='aboutH'>Our Core Value</h2>
+              <h2 className='aboutH'>Our Core Values</h2>
               <li className='aboutli'>Safety <img src={safety} alt="" /></li> 
               <li className='aboutli'>Efficiency <img src={efficiency} alt="" /></li>
               <li className='aboutli'>Speed <img src={speed} alt="" /></li>
@@ -28,32 +29,32 @@ const About = () => {
                    email us today and lets discuss your next project.
             </p>
             <p className='aboutPar'>
-            <img src={safety} alt="" /> Safety:  One of our very core is 
+            <img src={safety} className='aboutImg' alt="" /> Safety:  One of our very core is 
             the priority we ascribe to safety at site, we recognize that safety 
             is big business and at such we can nt but continue to emphasize
             safety as everyones business.
             </p>
             <p className='aboutPar'>
-            <img src={efficiency} alt="" /> 
+            <img src={efficiency} className='aboutImg' alt="" /> 
             Efficiency: We will continue to deliver and be your choice for that 
             next project, think building, think Magnificent Ltd, be rest assured 
             that your project will deliver on time, We have you covered
             </p>
             <p className='aboutPar'>
-            <img src={speed} alt="" /> 
+            <img src={speed} className='aboutImg' alt="" /> 
             Speed: To deliver your projects on time, choose Magnificent Ltd, 
             you choose timely delivery of project, we deliver at your pace, at 
             Magnificent ltd, we are here to serve you better, place that call today,
             we are here to serve.
             </p>
             <p className='aboutPar'>
-            <img src={quality} alt="" />
+            <img src={quality} className='aboutImg' alt="" />
             Quality: We ensure that all quality and standards are maintained all
             through the project life cycle, quality assurance is a major player in the 
             execution of a durable project, so we are keen on maintaining the quality 
             of project to ensure that we beat and surpass the standards.
             </p>
-            </div></div>
+            </div></div></div>
     </div>
   )
 }

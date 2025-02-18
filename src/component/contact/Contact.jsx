@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faMailBulk, faMapLocation, faMapLocationDot, faMapPin, faPhone, faClock} from '@fortawesome/free-solid-svg-icons'
 import './contact.css'
 import axios from 'axios';
+import { faMap } from '@fortawesome/free-regular-svg-icons';
 
 const Contact = () => {
     const [message, setMessage] = useState('');
@@ -24,28 +27,31 @@ const Contact = () => {
             
             <div className="contactItem">
                 <div className='contat'>
-                    Email
+                <FontAwesomeIcon icon={faMailBulk} />
                     <p className='contactPar'>
                         ebinan10@gmail.com
                     </p>
                 </div>
                 <div className='contat'>
-                    Phone
+                <FontAwesomeIcon icon={faPhone} />
                     <p className='contactPar'>
-                    +2348135110879
+                    +2348134054517
                     </p>
                 </div>
                 <div className='contat'>
-                    Physical Address
-                    <p className='contactPar'>No 12, Diamond street Agric Ikorodu Lagos</p>
+                <FontAwesomeIcon icon={faMapPin} />
+                    <p className='contactPar'>No 153A, Ikorodu - Lagos, Agric Bus stop Ikorodu Lagos. </p>
+                </div>
+                <div className='contat'>
+                <FontAwesomeIcon icon={faClock} />
+                    <p className='contactPar'>Mon - Fri, 8:00am - 5:00am</p>
                 </div>
             </div>
-            <div className="contat">
-                <form action="" className="form">
-                    <textarea className='textarea' placeholder='Message Us' onChange={(e)=>{EnterInput(e,'message')}} value={message}/>
-                    <input type="email" placeholder='Email' className='input' onChange={(e)=>{EnterInput(e,'input')}} value={input}/>
-                    <button className='btn' onClick={Submit}>Submit</button>
-                </form>
+            <div className="contat" id='par'>
+               <p>Need to speak to us email us and you are one step away to your next project. <br/>
+                We like to hear from you, just make that call and we are right at your door to serve you.
+               </p>
+                
             </div>
         </div>
     </div>
