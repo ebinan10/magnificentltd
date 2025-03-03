@@ -4,12 +4,18 @@
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: black; 
+}
+.contacth2{
+    /* width: 74%; */
+    height: 5vh;
+    font-size: larger;
 }
 .contactContainer{
     width: 90%;
@@ -87,7 +93,7 @@ textarea.textarea:active, textarea.textarea:focus{
 @media (max-width: 48rem) {
     .contactContainer{
         width: 100%;
-        height: 100vh;
+        min-height: 160vh;
         flex-direction:column;
 }
     .contat{
@@ -101,6 +107,16 @@ textarea.textarea:active, textarea.textarea:focus{
     justify-content: center;
     }
     .contact{
-        height: 110vh;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacth2{
+        width: 100%;
+        height: 4vh;
+        font-size: medium;
+    }
+    .contactPar{
+        padding-right: 10px;
     }
 }

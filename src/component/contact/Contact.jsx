@@ -26,6 +26,9 @@ const Contact = () => {
         <div className="contactContainer">
             
             <div className="contactItem">
+            <div className='contat'>
+            <h4 className='contacth2'> Contact</h4>
+            </div>
                 <div className='contat'>
                 <FontAwesomeIcon icon={faMailBulk} />
                     <p className='contactPar'>

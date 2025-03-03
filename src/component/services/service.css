@@ -1,0 +1,21 @@
+.service{
+    display: flex;
+    justify-content: center;
+    height: min-content;
+}
+
+.serviceContainer{
+    display: flex;
+    justify-items: center;
+}
+
+.serviceItem{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.serviceMap{
+    color: black;
+    height: min-content;
+}
