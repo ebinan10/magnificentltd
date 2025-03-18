@@ -58,8 +58,8 @@ const Nav = () => {
               </NavLink>
               </li>
               <li>
-              <NavLink  to="/product">
-              <h1 className=' w-full md:w-0 md:none md:h-0'> Our Product</h1>
+              <NavLink  to="/location">
+              <h1 className=' w-full md:w-0 md:none md:h-0'> Location</h1>
                 </NavLink>
               </li>
               <li>

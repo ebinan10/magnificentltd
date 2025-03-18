@@ -1,21 +1,57 @@
 .service{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: min-content;
 }
 
-.serviceContainer{
-    display: flex;
-    justify-items: center;
+.serviceTitle{
+        padding-top: 150px;
+        width:60%;
+        display: flex;
+        justify-content: flex-start;
+        color: white;
 }
 
-.serviceItem{
+.serviceContainer{
+    width: 100%;
+    flex-direction: column;
     display: flex;
+    justify-items: center;
     justify-items: center;
     align-items: center;
 }
 
+.serviceItem{
+    width: 100%;
+    /* padding-top: 100px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .serviceMap{
-    color: black;
-    height: min-content;
+    padding: 20px;
+    margin: 50px;
+    background-color: rgb(221, 220, 220);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    height: 300px;
+    width: 400px;
+    border-radius: 50px;
+    gap: 20px;
+}
+p.serviceP{
+    color:#000000;
+    font-size: 16px;
+    text-align: center;
+}
+
+.serviceImg{
+    width: 70px;
+    height: 80px;
 }
