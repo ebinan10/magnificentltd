@@ -16,6 +16,7 @@ import Footer from './component/footer/Footer';
 import Contact from './component/contact/Contact';
 import About from './component/about/About';
 import Header from './component/header/Header';
+import { Location } from './component/location/Location';
 
 const Rout = () => {
   return (
@@ -31,8 +32,8 @@ const Rout = () => {
                 <Route path='login' element={<Login/>}/>
                 <Route path='contact' element={<Contact/>}/>
                 <Route path='service' element={<Service/>}/>
-                <Route path='component2' element={<Component2/>}/>
-                <Route path='component3' element={<Component3/>}/>
+                <Route path='location' element={<Location/>}/>
+                <Route path='component3' element={<Component3/>}/> 
                 <Route path='about' element={<About/>}/>
                 <Route path='component4' element={<Component4/>}/>
                 <Route path='component5' element={<Protected>

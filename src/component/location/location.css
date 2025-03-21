@@ -1,0 +1,32 @@
+.location{
+    width: 100%;
+    height:min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.locationContainer{
+    width: 100%;
+    margin: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.locationItem{
+    width: 100%;
+    margin-top: 70px;
+    height: 90vh ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.locationH{
+    color: black;
+}
+.locationMap{
+    height: 30vh;
+    width: 25vw;
+}
